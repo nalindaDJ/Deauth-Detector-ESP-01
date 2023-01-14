@@ -2,6 +2,9 @@
 
 This project uses an ESP01S with an ESP8266 chipset to detect WiFi deauth packets and uses an LED to indicate when a deauth packet is detected.
 
+## Demo Video
+Watch [Demonstration](https://youtube.com/shorts/XAwt-TKwggw)
+
 ## Hardware
 
 - ESP01S with ESP8266 chipset
@@ -20,4 +23,9 @@ This project uses an ESP01S with an ESP8266 chipset to detect WiFi deauth packet
 4. When the ESP01S powers up, The LED will turn on whenever a deauth packet is detected.
 
 ## What's Next
-- Add OLED Display to show deauth packets and status
+- Add OLED Display to show deauth packets and status - Done 12th Jan 2023 (refer witholed.ino)
+
+`#include <Wire.h>`
+`#include <Adafruit_GFX.h>`
+`#include <Adafruit_SSD1306.h>`
+`#include <ESP8266WiFi.h>`
